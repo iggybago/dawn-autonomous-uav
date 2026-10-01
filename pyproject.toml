@@ -4,12 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dawn-autonomous-uav"
-version = "0.1.0"
+version = "0.2.0"
 description = "Resilient autonomous UAV engineering project focused on GNC, sensor fusion, autonomous navigation and flight-system validation."
 requires-python = ">=3.12"
+dependencies = ["numpy"]
 
 [project.optional-dependencies]
 dev = [
+    "matplotlib",
     "pytest",
     "ruff",
 ]
